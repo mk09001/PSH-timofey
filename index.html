@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Тимофея - Юный IT гений</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating { animation: float 3s ease-in-out infinite; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-white shadow-sm py-6">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl font-bold gradient-text">Тимофей</h1>
+                        <p class="text-gray-600 mt-2">Юный IT специалист - 8 лет</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="bg-blue-100 p-4 rounded-lg flex items-center">
+                            <i class="fas fa-medal text-yellow-500 text-2xl mr-2"></i>
+                            <span class="font-semibold">Лучший программист</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <!-- Intro Section -->
+            <section class="mb-16 text-center">
+                <h2 class="text-3xl font-bold mb-6 gradient-text section-title">Обо мне</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Я - 8-летний IT энтузиаст с большим опытом в различных цифровых технологиях. 
+                    Мне нравится создавать 3D модели, разрабатывать игры и анимации, а также осваивать виртуальную реальность.
+                </p>
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex items-center justify-center">
+                        <div class="bg-blue-50 p-4 rounded-full">
+                            <i class="fas fa-cube text-blue-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">3D Моделирование</h3>
+                            <p class="text-sm text-gray-600">Tinkercad</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-purple-50 p-4 rounded-full">
+                            <i class="fas fa-vr-cardboard text-purple-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">VR Разработка</h3>
+                            <p class="text-sm text-gray-600">CoSpaces</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-green-50 p-4 rounded-full">
+                            <i class="fas fa-gamepad text-green-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">Разработка игр</h3>
+                            <p class="text-sm text-gray-600">Kodu & Construct 3</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-yellow-50 p-4 rounded-full">
+                            <i class="fas fa-film text-yellow-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">Анимация</h3>
+                            <p class="text-sm text-gray-600">Animaker</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Sections -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 3D Modeling Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-cube text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">3D Моделирование</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Создаю сложные 3D модели в Tinkercad с точностью и вниманием к деталям.
+                        Умею проектировать функциональные конструкции и декоративные элементы.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fab fa-autoprefixer text-blue-500 text-6xl floating"></i>
+                    </div>
+                </section>
+
+                <!-- VR Development Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-vr-cardboard text-purple-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">VR Разработка</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Разрабатываю интерактивные миры в CoSpaces Edu, которые можно просматривать 
+                        в виртуальной реальности. Создаю образовательные проекты и развлекательные среды.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fas fa-glasses text-purple-500 text-6xl floating"></i>
+                    </div>
+                </section>
+
+                <!-- Game Development Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-gamepad text-green-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Разработка игр</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Создаю увлекательные игры на Kodu Game Lab и профессиональные 2D игры в Construct 3. 
+                        Умею проектировать геймплей, программировать логику и тестировать свои проекты.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fas fa-robot text-green-500 text-6xl floating"></i>
+                    </div>
+                </section>
+
+                <!-- Animation Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-film text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Анимация</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Произвожу профессиональные анимационные ролики в Animaker. Умею создавать 
+                        персонажей, анимировать их и добавлять звуковое сопровождение.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fas fa-photo-film text-yellow-500 text-6xl floating"></i>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Additional Skills -->
+            <section class="mt-16">
+                <h2 class="text-3xl font-bold mb-8 gradient-text section-title text-center">Другие навыки</h2>
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-keyboard text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Скорость печати</h3>
+                                <p class="text-gray-600">
+                                    В свободное время активно тренируюсь в Стамине, чтобы увеличить скорость 
+                                    слепой печати. Уже достиг хороших результатов!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-lightbulb text-indigo-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Креативное мышление</h3>
+                                <p class="text-gray-600">
+                                    Обладаю богатой фантазией и постоянно придумываю новые идеи 
+                                    для своих проектов в различных программах.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-puzzle-piece text-pink-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Логика и программирование</h3>
+                                <p class="text-gray-600">
+                                    Отлично разбираюсь в логике игр и программировании визуальных 
+                                    скриптов. Быстро нахожу решения сложных задач.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-teal-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Обучение</h3>
+                                <p class="text-gray-600">
+                                    Быстро осваиваю новые технологии и программы. Умею находить 
+                                    информацию и разбираться в сложных темах самостоятельно.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h2 class="text-xl font-bold">Тимофей</h2>
+                        <p class="text-gray-400">Юный IT специалист</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-itch-io text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-gray-400 text-sm">
+                    <p>&copy; 2023 Все права защищены. Разработано с ♥ молодым гением.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Простая анимация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.remove('opacity-0');
+                    card.classList.add('opacity-100');
+                }, 200 * index);
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Тимофея - Юный IT гений</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating { animation: float 3s ease-in-out infinite; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-white shadow-sm py-6">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl font-bold gradient-text">Тимофей</h1>
+                        <p class="text-gray-600 mt-2">Юный IT специалист - 8 лет</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="bg-blue-100 p-4 rounded-lg flex items-center">
+                            <i class="fas fa-medal text-yellow-500 text-2xl mr-2"></i>
+                            <span class="font-semibold">Лучший программист</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <!-- Intro Section -->
+            <section class="mb-16 text-center">
+                <h2 class="text-3xl font-bold mb-6 gradient-text section-title">Обо мне</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                    Я - 8-летний IT энтузиаст с большим опытом в различных цифровых технологиях. 
+                    Мне нравится создавать 3D модели, разрабатывать игры и анимации, а также осваивать виртуальную реальность.
+                </p>
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex items-center justify-center">
+                        <div class="bg-blue-50 p-4 rounded-full">
+                            <i class="fas fa-cube text-blue-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">3D Моделирование</h3>
+                            <p class="text-sm text-gray-600">Tinkercad</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-purple-50 p-4 rounded-full">
+                            <i class="fas fa-vr-cardboard text-purple-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">VR Разработка</h3>
+                            <p class="text-sm text-gray-600">CoSpaces</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-green-50 p-4 rounded-full">
+                            <i class="fas fa-gamepad text-green-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">Разработка игр</h3>
+                            <p class="text-sm text-gray-600">Kodu & Construct 3</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-yellow-50 p-4 rounded-full">
+                            <i class="fas fa-film text-yellow-500 text-3xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold">Анимация</h3>
+                            <p class="text-sm text-gray-600">Animaker</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Sections -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 3D Modeling Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-cube text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">3D Моделирование</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Создаю сложные 3D модели в Tinkercad с точностью и вниманием к деталям.
+                        Умею проектировать функциональные конструкции и декоративные элементы.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fab fa-autoprefixer text-blue-500 text-6xl floating"></i>
+                    </div>
+                </section>
+
+                <!-- VR Development Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-vr-cardboard text-purple-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">VR Разработка</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Разрабатываю интерактивные миры в CoSpaces Edu, которые можно просматривать 
+                        в виртуальной реальности. Создаю образовательные проекты и развлекательные среды.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fas fa-glasses text-purple-500 text-6xl floating"></i>
+                    </div>
+                </section>
+
+                <!-- Game Development Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-gamepad text-green-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Разработка игр</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Создаю увлекательные игры на Kodu Game Lab и профессиональные 2D игры в Construct 3. 
+                        Умею проектировать геймплей, программировать логику и тестировать свои проекты.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fas fa-robot text-green-500 text-6xl floating"></i>
+                    </div>
+                </section>
+
+                <!-- Animation Section -->
+                <section class="bg-white rounded-xl shadow-md p-6 card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-film text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Анимация</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Произвожу профессиональные анимационные ролики в Animaker. Умею создавать 
+                        персонажей, анимировать их и добавлять звуковое сопровождение.
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <i class="fas fa-photo-film text-yellow-500 text-6xl floating"></i>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Additional Skills -->
+            <section class="mt-16">
+                <h2 class="text-3xl font-bold mb-8 gradient-text section-title text-center">Другие навыки</h2>
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-keyboard text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Скорость печати</h3>
+                                <p class="text-gray-600">
+                                    В свободное время активно тренируюсь в Стамине, чтобы увеличить скорость 
+                                    слепой печати. Уже достиг хороших результатов!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-lightbulb text-indigo-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Креативное мышление</h3>
+                                <p class="text-gray-600">
+                                    Обладаю богатой фантазией и постоянно придумываю новые идеи 
+                                    для своих проектов в различных программах.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-puzzle-piece text-pink-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Логика и программирование</h3>
+                                <p class="text-gray-600">
+                                    Отлично разбираюсь в логике игр и программировании визуальных 
+                                    скриптов. Быстро нахожу решения сложных задач.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-teal-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Обучение</h3>
+                                <p class="text-gray-600">
+                                    Быстро осваиваю новые технологии и программы. Умею находить 
+                                    информацию и разбираться в сложных темах самостоятельно.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h2 class="text-xl font-bold">Тимофей</h2>
+                        <p class="text-gray-400">Юный IT специалист</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-itch-io text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-gray-400 text-sm">
+                    <p>&copy; 2023 Все права защищены. Разработано с ♥ молодым гением.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Простая анимация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.remove('opacity-0');
+                    card.classList.add('opacity-100');
+                }, 200 * index);
+            });
+        });
+    </script>
+</body>
+</html>
